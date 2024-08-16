@@ -2,6 +2,16 @@ import streamlit as st
 from datetime import datetime
 import pandas as pd
 
+st.set_page_config(page_title="Plotting Demo", page_icon="📈")
+
+st.markdown("# Plotting Demo")
+st.sidebar.header("Plotting Demo")
+st.write(
+    """This demo illustrates a combination of plotting and animation with
+Streamlit. We're generating a bunch of random numbers in a loop for around
+5 seconds. Enjoy!"""
+)
+
 class input_field:
     def __init__(self):
         # st.session_state を使って支出や収入を保持する
